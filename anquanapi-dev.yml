@@ -14,7 +14,7 @@ zuul:
     pointcaptcha: /api/pointcaptcha/**
 portrait_professional:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 contact_text:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
