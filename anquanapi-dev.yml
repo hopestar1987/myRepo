@@ -3,7 +3,7 @@ zuul:
     eager-load:
       enabled: true
   routes:
-    portrait_professional: /api/portrait_professional/**
+    portrait_professional: /api1/portrait_professional/**
     contact_text: /api/contact_text/**
     contact_tel: /api/contact_tel/**
     contact_wx: /api/contact_wx/**
