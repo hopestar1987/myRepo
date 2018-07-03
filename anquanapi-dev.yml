@@ -1,0 +1,41 @@
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+  routes:
+    portrait_professional: /api/portrait_professional/**
+    contact_text: /api/contact_text/**
+    contact_tel: /api/contact_tel/**
+    contact_wx: /api/contact_wx/**
+    contact_qq: /api/contact_qq/**
+    politicalimage: /api/politicalimage/**
+    advertisementimage: /api/advertisementimage/**
+    slidercaptcha: /api/slidercaptcha/**
+    pointcaptcha: /api/pointcaptcha/**
+portrait_professional:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+contact_text:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+contact_tel:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+contact_wx:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+contact_qq:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+politicalimage:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+advertisementimage:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+slidercaptcha:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+pointcaptcha:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
